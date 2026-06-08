@@ -9,10 +9,10 @@ Lightweight with zero external dependencies — pure C and POSIX sockets
 Clean, readable code suitable for learning and extension
 
 ## Project Structure
-tcp-server-client/
-── Server.c       # TCP server — listens and handles incoming connections
-── Client.c       # TCP client — connects to the server and sends messages
-── README.md
+<br/>|
+<br/>|── Server.c       # TCP server — listens and handles incoming connections
+<br/>|── Client.c       # TCP client — connects to the server and sends messages
+<br/>|── README.md
 
 ## Requirements
 
@@ -22,31 +22,30 @@ No external libraries required
 
 ## Build
 Compile each program separately:
-bash 
-gcc Server.c -o Server
-gcc Client.c -o Client
+<br/>gcc Server.c -o Server
+<br/>gcc Client.c -o Client
 
 ## Usage
 1. Start the server (in one terminal):
-bash ./Server
-The server will start listening for incoming connections.
+<br/>bash ./Server
+<br/>The server will start listening for incoming connections.
 2. Connect a client (in another terminal):
-bash ./Client
-The client will connect to the server and you can begin exchanging messages.
+<br/>bash ./Client
+<br/>The client will connect to the server and you can begin exchanging messages.
 
 //If running on different machines, update the IP address in Client.c to point to the server's IP.
 
 
 ## How It Works
 Client                        Server
-  |                              |
-  |-------- connect() ---------> |
-  |                              |
-  |-------- send(msg) ---------> |
-  |                              |
-  | <------- recv(msg) --------- |
-  |                              |
-  |-------- close() -----------> |
+<br/>  |                              |
+<br/>  |-------- connect() ---------> |
+<br/>  |                              |
+<br/>  |-------- send(msg) ---------> |
+<br/>  |                              |
+<br/>  | <------- recv(msg) --------- |
+<br/>  |                              |
+<br/>  |-------- close() -----------> |
 
 The Server creates a socket, binds to a port, and calls listen() to wait for connections
 The Client creates a socket and calls connect() to reach the server
