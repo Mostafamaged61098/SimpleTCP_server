@@ -1,32 +1,32 @@
-//TCP Server / Client in C
+"""TCP Server / Client in C"""
 A lightweight, terminal-based TCP client-server application written in C, demonstrating core socket programming concepts including connection handling, message exchange, and graceful disconnection.
 
-//Features
+""Features""
 
 Establishes a TCP connection between a server and one or more clients
 Bidirectional message exchange over a local or network socket
 Lightweight with zero external dependencies — pure C and POSIX sockets
 Clean, readable code suitable for learning and extension
 
-//Project Structure
+""Project Structure""
 tcp-server-client/
 ── Server.c       # TCP server — listens and handles incoming connections
 ── Client.c       # TCP client — connects to the server and sends messages
 ── README.md
 
-//Requirements
+""Requirements""
 
 GCC compiler
 Linux / macOS (or any POSIX-compliant OS)
 No external libraries required
 
-//Build
+""Build""
 Compile each program separately:
 bash 
 gcc Server.c -o Server
 gcc Client.c -o Client
 
-//Usage
+""Usage""
 1. Start the server (in one terminal):
 bash ./Server
 The server will start listening for incoming connections.
@@ -54,7 +54,7 @@ Once connected, both sides can send() and recv() messages
 Either side can close the connection gracefully
 
 
-//Concepts Demonstrated
+""Concepts Demonstrated""
 
 BSD socket API (socket, bind, listen, accept, connect)
 TCP/IP connection lifecycle
@@ -62,7 +62,7 @@ Client-server architecture
 POSIX system calls in C
 
 
-👤 Author
-[Mostafa Maged]
-https://github.com/Mostafamaged61098
-m.mostafamostafa.mm@gmail.com
+<br/>""Author""
+<br/>[Mostafa Maged]
+<br/>https://github.com/Mostafamaged61098
+<br/>m.mostafamostafa.mm@gmail.com
