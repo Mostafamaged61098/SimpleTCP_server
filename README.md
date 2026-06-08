@@ -22,15 +22,16 @@ No external libraries required
 
 //Build
 Compile each program separately:
-bashgcc Server.c -o Server
+bash 
+gcc Server.c -o Server
 gcc Client.c -o Client
 
 //Usage
 1. Start the server (in one terminal):
-bash./Server
+bash ./Server
 The server will start listening for incoming connections.
 2. Connect a client (in another terminal):
-bash./Client
+bash ./Client
 The client will connect to the server and you can begin exchanging messages.
 
 //If running on different machines, update the IP address in Client.c to point to the server's IP.
