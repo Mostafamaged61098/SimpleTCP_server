@@ -38,13 +38,9 @@ Compile each program separately:
 
 ## How It Works
 Client                        Server
-<br/>  |                              |
 <br/>  |-------- connect() ---------> |
-<br/>  |                              |
 <br/>  |-------- send(msg) ---------> |
-<br/>  |                              |
 <br/>  | <------- recv(msg) --------- |
-<br/>  |                              |
 <br/>  |-------- close() -----------> |
 
 The Server creates a socket, binds to a port, and calls listen() to wait for connections
