@@ -60,4 +60,3 @@ POSIX system calls in C
 <br/> ## Author
 <br/>[Mostafa Maged]
 <br/>https://github.com/Mostafamaged61098
-<br/>m.mostafamostafa.mm@gmail.com
